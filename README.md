@@ -54,7 +54,7 @@ Incluir en el campo head:
 ### 3. Header
 
 Incluir campo header (`<header>`) que contenga:
-* Campo con nombre y apellidos del alumno. La etiqueta utilizada, por ejemplo `<h1>`, debe incluir como atributo `"id=nombre"`. 
+* Campo con nombre y apellidos del alumno. La etiqueta utilizada, por ejemplo `<h1>`, debe incluir como atributo `id="nombre"`. 
 * Fotografía del alumno (`img src="foto.jpg"`). La fotografía debe guardarse en el directorio raíz del proyecto y llamarse `foto.jpg`. 
 * Fecha de nacimiento del alumno. La etiqueta utilizada, por ejemplo `<p>`, debe incluir como atributo `id="fecha_nacimiento"`.
 * Otros datos personales como email, dirección, etc., que completen el CV.
@@ -63,9 +63,9 @@ Incluir campo header (`<header>`) que contenga:
 
 El CV debe incluir las siguientes secciones (marca HTML section):
 
-* Sección 1 con atributo `id=estudios`. El contendio de la sección debe incluir la información académica del alumno. Se recomienda utilizar una lista que muestre en orden cronológico inverso los estudios cursados.
-* Sección 2 con atributo `id=laborar`. El contenido de la sección debe incluir la experiencia laboral del alumno o intereses laborales. Se recomienda utilizar una lista que separe las distintas entradas.
-* Sección 3 con atributo `id=otros`. Se recomienda utilizar una lista como contenido de esta sección. El contenido de la sección debe incluir:
+* Sección 1 con atributo `id="estudios"`. El contendio de la sección debe incluir la información académica del alumno. Se recomienda utilizar una lista que muestre en orden cronológico inverso los estudios cursados.
+* Sección 2 con atributo `id="laboral`. El contenido de la sección debe incluir la experiencia laboral del alumno o intereses laborales. Se recomienda utilizar una lista que separe las distintas entradas.
+* Sección 3 con atributo `id="otros"`. Se recomienda utilizar una lista como contenido de esta sección. El contenido de la sección debe incluir:
   * Un enlace al GitHub del alumno.
   * Información adicional, por ejemplo, idiomas, aficiones, etc.
 
