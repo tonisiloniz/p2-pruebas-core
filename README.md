@@ -5,7 +5,7 @@
 
 # Práctica 2 - CV
 
-Versión: 31 de Enero de 2022
+Versión: 3 de Febrero de 2022
 
 ## Objetivos
 
@@ -43,17 +43,17 @@ Para superar la entrega el alumno debe incluir en el CV:
 ### 1. Estructura básica de un fichero HTML
 
 * Crear el esqueleto de un fichero HTML llamado `cv.html`. Debe incluir las etiquetas básicas de todo fichero HTML: `<html>`, `<head>`, `<body>`, etc. 
-* Crear el fichero CSS (`cv.css`)
+* Crear el fichero CSS (`cv.css`) y cargarlo desde el HTML.
 
 ### 2. Head
 
 Incluir en el campo head:
-* Título
-* Importar la hoja de estilos `cv.css`
+* Título (por ejemplo CV de + su nombre)
+* Incluir la hoja de estilos `cv.css`
 
 ### 3. Header
 
-Incluir campo header (`<header>`) que contenga:
+Incluir header (`<header>`) que contenga:
 * Campo con nombre y apellidos del alumno. La etiqueta utilizada, por ejemplo `<h1>`, debe incluir como atributo `id="nombre"`. 
 * Fotografía del alumno (`img src="foto.jpg"`). La fotografía debe guardarse en el directorio raíz del proyecto y llamarse `foto.jpg`. 
 * Fecha de nacimiento del alumno. La etiqueta utilizada, por ejemplo `<p>`, debe incluir como atributo `id="fecha_nacimiento"`.
@@ -67,6 +67,7 @@ El CV debe incluir las siguientes secciones (marca HTML section):
 * Sección 2 con atributo `id="laboral`. El contenido de la sección debe incluir la experiencia laboral del alumno o intereses laborales. Se recomienda utilizar una lista que separe las distintas entradas.
 * Sección 3 con atributo `id="otros"`. Se recomienda utilizar una lista como contenido de esta sección. El contenido de la sección debe incluir:
   * Un enlace al GitHub del alumno.
+  * Un enlace al correo UPM del alumno (con el @alumnos.upm.es)
   * Información adicional, por ejemplo, idiomas, aficiones, etc.
 
 ### 5. Footer
@@ -75,7 +76,10 @@ Incluir un footer con la fecha de actualización del CV. Debe contener el siguie
 
 ### 6. Modificar el CSS
 
-Modificar el estilo de la página web. Como mínimo se pide modificar el estilo de la etiqueta `<body>` y el estilo de la etiquet `<section>`. Por ejemplo, cambiar el color de fondo de la web y añadir borde a las secciones.
+Modificar el estilo de la página web. 
+
+* Como mínimo se pide modificar el estilo de la etiqueta `<body>` (cambiar el color de fondo) y el estilo de la etiquet `<section>` (cualquier cambio, por ejemplo, añadir borde a las secciones). 
+* Realizar otros cambios sobre el CSS.
 
 ## Prueba de la práctica
 
@@ -123,19 +127,17 @@ En el enlace **https://www.npmjs.com/package/autocorector** se proveen instrucci
 
 **RÚBRICA**: Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la parte indicada es correcta:
 
-- **%:** Existen todas las etiquetas html requeridas. 
-- **%:** La página web incluye la hoja de estilos (CSS).
-- **%:** La cabecera incluye la foto y los datos personales pedidos.
-- **%:** Existen las tres secciones pedidas (estudios, laboral, otros) con la información pedida en cada una de ellas.
-- **%:** Existe el pie de página con la fecha de actualización.
-- **%:** Se han añadido estilos al body y sections de la página web.
+- **10%:** Existen todas las etiquetas del esqueleto básico de HTML. 
+- **10%:** La página web incluye la hoja de estilos (CSS).
+- **30%:** Información de la cabecera:
+  - **10%:** Existe la cabecera.
+  - **10%:** La cabecera contiene la foto (foto.jpg).
+  - **10%:** La cabecera contiene los datos personales (mímimo nombre y fecha de nacimiento).
+- **20%:** información de las secciones:
+  - **10%:** Existen las tres secciones pedidas (estudios, laboral, y otros).
+  - **10%:** La sección otros incluye el enlace a GitHub y el correo del alumno (con @alumnos.upm.es)
+- **10%:** Existe el pie de página con la fecha de actualización.
+- **20%:** Se han añadido los estilos solicitados al body y sections de la página web.
 
 
 Si pasa todos los tests se dará la máxima puntuación.
-
-
-# TODO
-
-- Revisar enunciado
-- Revisar y especificar la puntuación por apartado
-- De CSS no se pide nada específico. Solo incluirlo en el HTML y que modifique body y section ¿Pedir algo más específico?

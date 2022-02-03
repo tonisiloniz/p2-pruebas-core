@@ -3,3 +3,6 @@ node_modules
 user.json
 .*
 data
+*.css
+*.html
+foto.jpg

@@ -6,6 +6,7 @@ const path = require("path");
 
 const {promisify} = require("util");
 const access = promisify(fs.access);
+const readFile = promisify(fs.readFile)
 
 const REG_URL = /(\b(http|ftp|https|ftps):\/\/[-A-ZáéíóúÁÉÍÓÚ0-9+&@#\/%?=~_|!:,.;]*[-A-ZáéíóúÁÉÍÓÚ0-9+&@#\/%=~_|])/ig;
 
@@ -174,6 +175,20 @@ TestUtils.warn_errors = function() {
 
 TestUtils.create_browser = function(url, wait=WAIT) {
     return new Browser({"waitDuration": wait, "silent": true, "runScripts": false });
+};
+
+TestUtils.getEmailAndToken = async (user_file_path) => {
+    let user_info = {};
+    if (await TestUtils.checkFileExists(path.resolve(process.cwd(), user_file_path))) {
+        user_info = JSON.parse(await readFile(path.resolve(process.cwd(), user_file_path)));
+        if (user_info && user_info.email && user_info.token) {
+            return user_info;
+        }
+        throw new Error("El fichero con la información del usuario contiene información inválida. La dirección de correo electrónico debe ser del dominio upm.es");
+    } else {
+        throw new Error("El fichero con la información del usuario no se encuentra, asegúrese de aceptar que se almacene en user.json");
+
+    }
 };
 
 module.exports = TestUtils;
