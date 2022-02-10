@@ -41,7 +41,7 @@ describe("Tests Práctica 2", function () {
 
         let checks = {
             "cv.html": {
-                true: [/<html>/, /<\/html>/, /<head>/, /<\/head>/, /<body>/, /<\/body>/]
+                true: [/<html/, /<\/html>/, /<head/, /<\/head>/, /<body/, /<\/body>/]
             },
             "cv.css": {
                 true: [/body/, /section/, /background-color/],
@@ -66,17 +66,16 @@ describe("Tests Práctica 2", function () {
         });
 
         scored(`La página web incluye la hoja de estilos (CSS) cv.css`, 1, async function () {
-            browser.html('link[rel="stylesheet"][href="cv.css"]').should.not.be.empty;
+            let f = path.join(path_assignment, "cv.css");
+            this.msg_err = `No existe el fichero ${f}`;
+            (await checkFileExists(f)).should.equal(true);
+            this.msg_err = `El css no se carga desde el html`;
+            browser.html('link[rel="stylesheet"]').should.not.be.empty;
+            (browser.evaluate(`document.querySelector('link[rel="stylesheet"]').href`)).includes("cv.css").should.be.true
         });
 
         scored(`Existe una cabecera`, 1, async function () {
-            content = browser.html("header");
-        });
-
-        scored(`La cabecera contiene una foto (foto.jpg)`, 1, async function () {
-            content = browser.html("header");
-            content.includes("img").should.be.equal(true);
-            content.includes("foto.jpg").should.be.equal(true);
+            browser.html("header").should.not.be.empty;
         });
 
         scored(`La cabecera contiene los datos personales pedidos`, 1, async function () {
@@ -87,6 +86,12 @@ describe("Tests Práctica 2", function () {
             browser.html("header #fecha_nacimiento").should.not.be.empty;
         });
 
+        scored(`La cabecera contiene una foto (foto.jpg)`, 1, async function () {
+            this.msg_err = "La cabecera no contiene la foto llamada foto.jpg";
+            content = browser.html("header");
+            content.includes("img").should.be.equal(true);
+            content.includes("foto.jpg").should.be.equal(true);
+        });
 
         scored(`Existe la sección de formación, datos laborales y otros"`, 1, async function () {
             this.msg_err = "No existe la sección de estudios";
