@@ -5,7 +5,7 @@
 
 # Práctica 2 - CV
 
-Versión: 3 de Febrero de 2022
+Versión: 8 de Enero de 2023
 
 ## Objetivos
 
