@@ -16,7 +16,7 @@ const WAIT =  typeof process.env.WAIT !== "undefined"?parseInt(process.env.WAIT)
 const TIMEOUT =  typeof process.env.TIMEOUT !== "undefined"?parseInt(process.env.TIMEOUT):2000;
 const TEST_PORT =  typeof process.env.TEST_PORT !== "undefined"?parseInt(process.env.TEST_PORT):3001;
 const FILTER = new RegExp(process.env.TESTFILTER, "i");
-const PATH_ASSIGNMENT = typeof process.env.PATH_ASSIGNMENT !== "undefined"?process.env.PATH_ASSIGNMENT:path.resolve(path.join(__dirname, "../"));
+const PATH_ASSIGNMENT = typeof process.env.PATH_ASSIGNMENT !== "undefined"?process.env.PATH_ASSIGNMENT:path.resolve(path.join(__dirname, "../.."));
 
 // CRITICAL ERRORS. Si hay errores críticos, el resto de tests no se lanzan.
 let error_critical = null;
@@ -163,9 +163,9 @@ TestUtils.path_assignment = PATH_ASSIGNMENT;
 
 TestUtils.warn_errors = function() {
     if(error_any || error_critical) {
-        console.log(`Algún error de Javascript ha sido suprimido. Puedes obtener más información de los errores lanzando el autocorector con la variable DEBUG. Por ejemplo:
+        console.log(`Algún error de Javascript ha sido suprimido. Puedes obtener más información de los errores lanzando el autocorector con la opción --debug. Por ejemplo:
 
-    DEBUG=1 autocorector
+    npx autocorector --debug
 
     Cuando preguntes en el foro, asegúrate de incluir esa información para que podamos ayudarte.
     `);

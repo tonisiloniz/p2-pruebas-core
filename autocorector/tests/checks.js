@@ -2,7 +2,7 @@
 /* eslint-disable no-undef*/
 // IMPORTS
 const path = require("path");
-const { create_browser, path_assignment, warn_errors, scored, checkFileExists, getEmailAndToken, getEmailAndToken2 } = require("./testutils");
+const { create_browser, path_assignment, warn_errors, scored, checkFileExists, getEmailAndToken, getEmailAndToken2 } = require("../utils/testutils");
 const fs = require("fs");
 const net = require('net');
 
