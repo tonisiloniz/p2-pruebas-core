@@ -80,49 +80,51 @@ Modificar el estilo de la página web.
 * Como mínimo se pide modificar el estilo de la etiqueta `<body>` (cambiar el color de fondo) y el estilo de la etiquet `<section>` (cualquier cambio, por ejemplo, añadir borde a las secciones). 
 * Realizar otros cambios sobre el CSS.
 
-## Prueba de la práctica
 
-Para ayudar al desarrollo, se provee una herramienta de autocorrección que prueba las distintas funcionalidades que se piden en el enunciado. Para utilizar esta herramienta debes tener node.js (y npm) (https://nodejs.org/es/) y Git instalados.
+## Capturas de pantalla
+Adicionalmente a pasar la batería de tests y obtener una nota hay que hacer dos capturas de pantalla. Dichas capturas de pantalla se tienen que colocar en formato png, jpg o pdf en el directorio de nombre “miscapturas” situado dentro del directorio raiz de la práctica. El autocorector las subirá junto con el código de la práctica y el resto de las evidencias a Moodle. 
+Estas capturas son obligatorias y deben ser personales, en ellas se debe ver el resultado de ejecutarlas en tu ordenador y que se vean claramente los datos solicitados. Si se entrega la captura de un compañero eso es considerado copia de la práctica, con un suspenso automático de toda la asignatura. Y si se entrega algo que no sea una captura como la solicitada (un fichero de imagen cualquiera para poder subir la nota ya que el autocorector solo comprueba que existan, no puede comprobar el contenido) el autocorector dejará subir la nota, pero uno de los profesores de la asignatura revisará estas capturas y pondrá inmediatamente un cero en la práctica. 
+Las capturas son las siguientes:
+### 1. Captura de pantalla de la página resultante
+<kbd>
+<img src="https://user-images.githubusercontent.com/52309/211205417-e7065838-a540-43ac-81ad-79752b1bdf37.png" alt="drawing" width="500"/>
+</kbd>
 
-Para instalar y hacer uso de la herramienta de autocorrección en el ordenador local, ejecuta los siguientes comandos en el directorio raíz del proyecto:
+### 2. Captura de pantalla del head de la página (que incluya al menos las etiquetas html, head, body y header)
+<kbd>
+<img src="https://user-images.githubusercontent.com/52309/211205478-5367585c-bc3c-4eac-b9e6-3bad809e0fe1.png" alt="drawing" width="500"/>
+</kbd>
+
+
+## Pruebas con el autocorector
+
+El autocorector es la herramienta que permite pasar la batería de tests a la práctica y producir una nota. También subirla a Moodle junto con el código desarrollado, las capturas y otras evidencias de evaluación.
+Ejecute el autocorector tantas veces como desee en la práctica y suba la nota a Moodle también tantas veces como desee hasta que se cierre la entrega, nos quedaremos con la última nota que hayamos subido.
+
+La nota que sube el autocorector es una nota provisional que puede estar sujeta a revisión por parte de los profesores de la asignatura, por ejemplo para revisar las capturas de pantalla subidas o si el código es copia de un compañero o es de un año anterior, en cuyo caso se actuará en consecuencia modificando la nota (o suspendiendo la asignatura completa en caso de copia). 
+
+
+## Probar la práctica y subir la nota a Moodle:
+Para la corrección se utilizará la herramienta autoCOREctor (ver presentación para instalarlo y usarlo en el Moodle de la asignatura, también hay en Moodle un FAQ con soluciones a problemas comunes y por supuesto esta el foro de la asignatura).
+
+Se recomienda descargar el código de la práctica e ir implementando las tareas solicitadas y visualizando el resultado cuando sea posible. Y cuando se tenga algo avanzado comenzar con la autocorrección que nos dará pistas sobre cosas que nos faltan o errores que hemos cometido por ejemplo en un nombre solicitado, si pasamos el autocorector nada más descargar la práctica en muchos casos faltan ficheros y nos dará un cero por no poder pasar la batería de tests.
+
+Pasos a seguir para pasar el autocorector:
 
 ```
-$ sudo npm install -g autocorector    ## Instala el programa de test
-$ autocorector                   ## Pasa los tests al fichero a entregar
-............................     ## en el directorio de trabajo
+$ cd P2_CV                   
+$ npm install    # no es necesario si ya se hizo al descargar el código de la práctica, solo hace falta hacerlo una vez
+$ npx autocorector              
+............................    
 ... (resultado de los tests)
 ```
 
-También se puede instalar como paquete local, en el caso de que no dispongas de permisos en 
-el ordenador en el que estás trabajando:
-
-```
-$ npm install autocorector     ## Instala el programa de test
-$ npx autocorector             ## Pasa los tests al fichero a entregar
-............................   ## en el directorio de trabajo
-... (resultado de los tests)
-```
-
-Se puede pasar la herramienta de autocorrección tantas veces como se desee sin ninguna repercusión en la calificación.
-
-
-
-## Instrucciones para la Entrega y Evaluación.
-
-Una vez satisfecho con su calificación, el alumno puede subir su entrega a Moodle con el siguiente comando:
-
-```
-$ autocorector --upload
-```
-
-o, si se ha instalado como paquete local:
+Y para subir la nota a Moodle (recordar que tenemos que tener 2 capturas de pantalla en la carpeta “miscapturas”):
 
 ```
 $ npx autocorector --upload
 ```
 
-La herramienta de autocorrección preguntará por el correo del alumno y el token de Moodle. 
-En el enlace **https://www.npmjs.com/package/autocorector** se proveen instrucciones para encontrar dicho token.
 
 **RÚBRICA**: Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la parte indicada es correcta:
 
