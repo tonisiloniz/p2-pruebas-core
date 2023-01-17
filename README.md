@@ -90,9 +90,9 @@ Las capturas son las siguientes:
 <img src="https://user-images.githubusercontent.com/52309/211205417-e7065838-a540-43ac-81ad-79752b1bdf37.png" alt="drawing" width="500"/>
 </kbd>
 
-### 2. Captura de pantalla del head de la página (que incluya al menos las etiquetas html, head, body y header)
+### 2. Captura de pantalla de las developer tools (de cualquier navegador, en el siguiente ejemplo se ven las de Chrome pero vale Firefox, Edge, etc.) en la que se vea el html de la página, con algunas secciones abiertas:
 <kbd>
-<img src="https://user-images.githubusercontent.com/52309/211205478-5367585c-bc3c-4eac-b9e6-3bad809e0fe1.png" alt="drawing" width="500"/>
+<img src="https://user-images.githubusercontent.com/52309/212846269-c6d0eb5c-89dc-4ee0-a344-ee96a3fc2bf2.png" alt="drawing" width="500"/>
 </kbd>
 
 
