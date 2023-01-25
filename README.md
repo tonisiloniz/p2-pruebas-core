@@ -5,7 +5,7 @@
 
 # Práctica 2 - CV
 
-Versión: 8 de Enero de 2023
+Versión: 25 de Enero de 2023
 
 ## Objetivos
 
@@ -20,19 +20,7 @@ En esta práctica, elaboraremos una página web estática con la información de
 
 ## Descargar el código del proyecto
 
-Para poder utilizar el autocorector en esta práctica, es necesario utilizar la **versión 16 de Node.js, superior a 16.8 (https://nodejs.org/es/) y Git (https://git-scm.com/)**.
-El proyecto debe clonarse en el ordenador en el que se está trabajando:
-
-```
-$ git clone https://github.com/CORE-UPM/P2_CV.git
-```
-
-A continuación se debe acceder al directorio de trabajo, e instalar todas las dependencias.
-
-```
-$ cd P2_CV
-$ npm install
-```
+Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/main/README.md#descargar-el-c%C3%B3digo-del-proyecto).
 
 ## Tareas
 
@@ -81,52 +69,34 @@ Modificar el estilo de la página web.
 * Realizar otros cambios sobre el CSS.
 
 
-## Capturas de pantalla
-Adicionalmente a pasar la batería de tests y obtener una nota hay que hacer dos capturas de pantalla. Dichas capturas de pantalla se tienen que colocar en formato png, jpg o pdf en el directorio de nombre “miscapturas” situado dentro del directorio raiz de la práctica. El autocorector las subirá junto con el código de la práctica y el resto de las evidencias a Moodle. 
-Estas capturas son obligatorias y deben ser personales, en ellas se debe ver el resultado de ejecutarlas en tu ordenador y que se vean claramente los datos solicitados. Si se entrega la captura de un compañero eso es considerado copia de la práctica, con un suspenso automático de toda la asignatura. Y si se entrega algo que no sea una captura como la solicitada (un fichero de imagen cualquiera para poder subir la nota ya que el autocorector solo comprueba que existan, no puede comprobar el contenido) el autocorector dejará subir la nota, pero uno de los profesores de la asignatura revisará estas capturas y pondrá inmediatamente un cero en la práctica. 
-Las capturas son las siguientes:
-### 1. Captura de pantalla de la página resultante
+## Pruebas con el autocorector
+
+Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/main/README.md#pruebas-con-el-autocorector).
+
+## Pruebas manuales y capturas de pantalla
+
+Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/main/README.md#pruebas-manuales-y-capturas-de-pantalla).
+
+Capturas a entregar con esta práctica: 
+
+- Captura 1: Captura de pantalla de la página resultante
 <kbd>
 <img src="https://user-images.githubusercontent.com/52309/211205417-e7065838-a540-43ac-81ad-79752b1bdf37.png" alt="drawing" width="500"/>
 </kbd>
 
-### 2. Captura de pantalla de las developer tools (de cualquier navegador, en el siguiente ejemplo se ven las de Chrome pero vale Firefox, Edge, etc.) en la que se vea el html de la página, con algunas secciones abiertas:
+- Captura 2: Captura de pantalla de las developer tools (de cualquier navegador, en el siguiente ejemplo se ven las de Chrome pero vale Firefox, Edge, etc.) en la que se vea el html de la página, con algunas secciones abiertas:
 <kbd>
 <img src="https://user-images.githubusercontent.com/52309/212846269-c6d0eb5c-89dc-4ee0-a344-ee96a3fc2bf2.png" alt="drawing" width="500"/>
 </kbd>
 
+## Instrucciones para la Entrega y Evaluación.
 
-## Pruebas con el autocorector
+Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/main/README.md#instrucciones-para-la-entrega-y-evaluaci%C3%B3n
+).
 
-El autocorector es la herramienta que permite pasar la batería de tests a la práctica y producir una nota. También subirla a Moodle junto con el código desarrollado, las capturas y otras evidencias de evaluación.
-Ejecute el autocorector tantas veces como desee en la práctica y suba la nota a Moodle también tantas veces como desee hasta que se cierre la entrega, nos quedaremos con la última nota que hayamos subido.
+## Rúbrica
 
-La nota que sube el autocorector es una nota provisional que puede estar sujeta a revisión por parte de los profesores de la asignatura, por ejemplo para revisar las capturas de pantalla subidas o si el código es copia de un compañero o es de un año anterior, en cuyo caso se actuará en consecuencia modificando la nota (o suspendiendo la asignatura completa en caso de copia). 
-
-
-## Probar la práctica y subir la nota a Moodle:
-Para la corrección se utilizará la herramienta autoCOREctor (ver presentación para instalarlo y usarlo en el Moodle de la asignatura, también hay en Moodle un FAQ con soluciones a problemas comunes y por supuesto esta el foro de la asignatura).
-
-Se recomienda descargar el código de la práctica e ir implementando las tareas solicitadas y visualizando el resultado cuando sea posible. Y cuando se tenga algo avanzado comenzar con la autocorrección que nos dará pistas sobre cosas que nos faltan o errores que hemos cometido por ejemplo en un nombre solicitado, si pasamos el autocorector nada más descargar la práctica en muchos casos faltan ficheros y nos dará un cero por no poder pasar la batería de tests.
-
-Pasos a seguir para pasar el autocorector:
-
-```
-$ cd P2_CV                   
-$ npm install    # no es necesario si ya se hizo al descargar el código de la práctica, solo hace falta hacerlo una vez
-$ npx autocorector              
-............................    
-... (resultado de los tests)
-```
-
-Y para subir la nota a Moodle (recordar que tenemos que tener 2 capturas de pantalla en la carpeta “miscapturas”):
-
-```
-$ npx autocorector --upload
-```
-
-
-**RÚBRICA**: Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la parte indicada es correcta:
+Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la parte indicada es correcta:
 
 - **10%:** Existen todas las etiquetas del esqueleto básico de HTML. 
 - **10%:** La página web incluye la hoja de estilos (CSS).
