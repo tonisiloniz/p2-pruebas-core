@@ -51,8 +51,10 @@ Incluir header (`<header>`) que contenga:
 
 El CV debe incluir las siguientes secciones (marca HTML section):
 
-* Sección 1 con atributo `id="estudios"`. El contendio de la sección debe incluir la información académica del alumno. Se recomienda utilizar una lista que muestre en orden cronológico inverso los estudios cursados.
+* Sección 1 con atributo `id="formacion"`. El contendio de la sección debe incluir la información académica del alumno. Se recomienda utilizar una lista que muestre en orden cronológico inverso los estudios cursados.
 * Sección 2 con atributo `id="laboral"`. El contenido de la sección debe incluir la experiencia laboral del alumno o intereses laborales. Se recomienda utilizar una lista que separe las distintas entradas.
+* Sección 3 con atributo `id="enlaces"`. El contendio de la sección debe incluir los enlaces relevantes al CV (GitHub, Linkedin...). Se recomienda utilizar una lista que separe las distintas entradas.
+  * Un enlace a información pública del alumno: Linkedin, GitHub... (en caso de no tener enlazar la página de GitHub: https://github.com). Se debe hacer uso de la etiqueta `<a>` con el atributos `id="info"` y el atributo `href` con el enlace.
 * Sección 3 con atributo `id="otros"`. Se recomienda utilizar una lista como contenido de esta sección. El contenido de la sección debe incluir:
   * Un enlace al correo UPM del alumno (con el @alumnos.upm.es)
   * Información adicional, por ejemplo, idiomas, aficiones, etc.
@@ -105,10 +107,10 @@ Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la
   - **10%:** La cabecera contiene la foto (foto.jpg).
   - **10%:** La cabecera contiene los datos personales (mímimo nombre y fecha de nacimiento).
 - **20%:** información de las secciones:
-  - **10%:** Existen las tres secciones pedidas (estudios, laboral, y otros).
-  - **10%:** La sección otros incluye el correo del alumno (con @alumnos.upm.es)
+  - **10%:** Existen las cuatro secciones pedidas (formacion, laboral, enlaces y otros).
+  - **5%:** La sección otros incluye el correo del alumno (con @alumnos.upm.es).
+  - **5%:** La sección enlaces incluye un enlace con información pública del alumno.
 - **10%:** Existe el pie de página con la fecha de actualización.
 - **20%:** Se han añadido los estilos solicitados al body y sections de la página web.
-
 
 Si pasa todos los tests se dará la máxima puntuación.

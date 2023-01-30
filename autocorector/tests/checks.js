@@ -94,16 +94,24 @@ describe("Tests Práctica 2", function () {
         });
 
         scored(`Existe la sección de formación, datos laborales y otros"`, 1, async function () {
-            this.msg_err = "No existe la sección de estudios";
-            browser.html("section#estudios").should.not.be.empty;
+            this.msg_err = "No existe la sección de formacion";
+            browser.html("section#formacion").should.not.be.empty;
             this.msg_err = "No existe la sección de datos laborales";
             browser.html("section#laboral").should.not.be.empty;
             this.msg_err = "No existe la sección de otros";
             browser.html("section#otros").should.not.be.empty;
+            this.msg_err = "No existe la sección de enlaces";
+            browser.html("section#enlaces").should.not.be.empty;;
+            browser.should.not.be.empty;
+
         });
 
+        scored(`Existe la sección de enlaces, con el enlace a GitHub"`, 0.5, async function () {
+            this.msg_err = "No existe el enlace a la información del alumno";
+            browser.html("a#info").should.not.be.empty;
+        });
 
-        scored(`Existe la sección de otros, con un enlace a GitHub y el correo elctrónico upm"`, 1, async function () {
+        scored(`Existe la sección de otros, con el correo elctrónico upm"`, 0.5, async function () {
             let content = browser.html("section#otros");
             content.should.not.be.empty;
             this.msg_err = "El fichero con la información del usuario no se encuentra, asegúrese de aceptar que se almacene en user.json";
@@ -112,6 +120,7 @@ describe("Tests Práctica 2", function () {
             this.msg_err = "El email del estudiante no coincide";
             content.includes(user_info.email).should.be.ok;
         });
+
 
         scored(`Existe un pie (footer) e incluye la fecha de actualización`, 1, async function () {
             content = browser.html("footer");
@@ -138,4 +147,3 @@ describe("Tests Práctica 2", function () {
 
     });
 })
-
