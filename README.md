@@ -51,12 +51,12 @@ Incluir header (`<header>`) que contenga:
 
 El CV debe incluir las siguientes secciones (marca HTML section):
 
-* Sección 1 con atributo `id="formacion"`. El contendio de la sección debe incluir la información académica del alumno. Se recomienda utilizar una lista que muestre en orden cronológico inverso los estudios cursados.
+* Sección 1 con atributo `id="formacion"`. El contenido de la sección debe incluir la información académica del alumno. Se recomienda utilizar una lista que muestre en orden cronológico inverso los estudios cursados.
 * Sección 2 con atributo `id="laboral"`. El contenido de la sección debe incluir la experiencia laboral del alumno o intereses laborales. Se recomienda utilizar una lista que separe las distintas entradas.
 * Sección 3 con atributo `id="enlaces"`. El contendio de la sección debe incluir los enlaces relevantes al CV (GitHub, Linkedin...). Se recomienda utilizar una lista que separe las distintas entradas.
-  * Un enlace a información pública del alumno: Linkedin, GitHub... (en caso de no tener enlazar la página de GitHub: https://github.com). Se debe hacer uso de la etiqueta `<a>` con el atributos `id="info"` y el atributo `href` con el enlace.
+  * Un enlace a información pública del alumno: Linkedin, GitHub... (en caso de no tener enlazar la página de GitHub: https://github.com). Se debe hacer uso de la etiqueta `<a>` con el atributo `id="info"` y el atributo `href` con el enlace.
 * Sección 3 con atributo `id="otros"`. Se recomienda utilizar una lista como contenido de esta sección. El contenido de la sección debe incluir:
-  * Un enlace al correo UPM del alumno (con el @alumnos.upm.es)
+  * El correo UPM del alumno (con el @alumnos.upm.es)
   * Información adicional, por ejemplo, idiomas, aficiones, etc.
 
 ### 5. Footer
@@ -67,8 +67,13 @@ Incluir un footer con la fecha de actualización del CV. Debe contener el siguie
 
 Modificar el estilo de la página web. 
 
-* Como mínimo se pide modificar el estilo de la etiqueta `<body>` (cambiar el color de fondo) y el estilo de la etiquet `<section>` (cualquier cambio, por ejemplo, añadir borde a las secciones). 
+* Como mínimo se pide modificar el estilo de la etiqueta `<body>` (cambiar el color de fondo) y el estilo de la etiqueta `<section>` (cualquier cambio, por ejemplo, añadir borde a las secciones). 
 * Realizar otros cambios sobre el CSS.
+
+##Consideraciones adicionales y recomendaciones
+Importante: Se han de emplear los ID y las etiquetas especificadas en el enunciado. Ponga exactamente lo que se pide respetando mayúsculas y acentos. Si el ID fecha_nacimiento por ejemplo lo llamamos "fechaNacimineto" el autocorector no la encontrará y no nos dará los puntos.
+De cara al examen piense en qué ha aprendido y qué cosas podría modificar en la práctica y como aplicaría las etiquetas empleadas para crear otro tipo de páginas. Por ejemplo, piense como crear una página similar al Moodle de la UPM,
+que esté dividida en varios temas y en cada uno de ellos tenga enlaces al material del curso.
 
 
 ## Pruebas con el autocorector
@@ -105,7 +110,7 @@ Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la
 - **30%:** Información de la cabecera:
   - **10%:** Existe la cabecera.
   - **10%:** La cabecera contiene la foto (foto.jpg).
-  - **10%:** La cabecera contiene los datos personales (mímimo nombre y fecha de nacimiento).
+  - **10%:** La cabecera contiene los datos personales (mínimo nombre y fecha de nacimiento).
 - **20%:** información de las secciones:
   - **10%:** Existen las cuatro secciones pedidas (formacion, laboral, enlaces y otros).
   - **5%:** La sección otros incluye el correo del alumno (con @alumnos.upm.es).
