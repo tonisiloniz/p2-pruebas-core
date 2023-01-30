@@ -87,13 +87,14 @@ Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/m
 Capturas a entregar con esta práctica: 
 
 - Captura 1: Captura de pantalla de la página resultante
+
 <kbd>
-<img src="https://user-images.githubusercontent.com/52309/211205417-e7065838-a540-43ac-81ad-79752b1bdf37.png" alt="drawing" width="500"/>
+<img src="https://user-images.githubusercontent.com/47325335/215489618-b09de2fa-ab43-4747-9d28-e3b6d81b3422.png" alt="drawing" width="500"/>
 </kbd>
 
 - Captura 2: Captura de pantalla de las developer tools (de cualquier navegador, en el siguiente ejemplo se ven las de Chrome pero vale Firefox, Edge, etc.) en la que se vea el html de la página, con algunas secciones abiertas:
 <kbd>
-<img src="https://user-images.githubusercontent.com/52309/212846269-c6d0eb5c-89dc-4ee0-a344-ee96a3fc2bf2.png" alt="drawing" width="500"/>
+<img src="https://user-images.githubusercontent.com/47325335/215489911-3d5cd376-8094-40e1-ae68-a692f18b77f0.png" alt="drawing" width="500"/>
 </kbd>
 
 ## Instrucciones para la Entrega y Evaluación.
